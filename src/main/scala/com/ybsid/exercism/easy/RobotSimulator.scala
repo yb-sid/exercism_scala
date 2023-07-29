@@ -11,7 +11,8 @@ object Bearing extends Enumeration {
   type Bearing = Value
   val North, South, East, West = Value
 }
-import Bearing._
+import Bearing.*
+import com.ybsid.exercism.medium.Robot
 case class Robot(var bearing : Bearing , var coordinates : (Int, Int)) {
 
   def turnRight  = {
